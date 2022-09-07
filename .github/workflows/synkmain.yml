@@ -20,7 +20,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          e1f2e232-2ab3-4e90-8054-6c89b5bc22a4;
+          SYNK_SECRETS;
         with:
           command: monitor
           
@@ -59,5 +59,5 @@ jobs:
       - name: Publish
         run: npm publish
         env:
-          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; 
+          NPM_SECRETS; 
  
