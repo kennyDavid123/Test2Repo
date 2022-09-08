@@ -20,7 +20,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          SYNK_SECRETS;
+          GITHUB_TOKEN: ${{ SYNK_SECRETS }}
         with:
           command: monitor
           
